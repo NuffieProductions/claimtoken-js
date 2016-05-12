@@ -4,7 +4,7 @@
   "description": "Claim Based Authentication Encryption via OpenSSL",
   "main": "./lib/claim-token.js",
   "scripts": {
-    "test": "mocha test --recursive --watch --debug"
+    "test": "mocha test --recursive"
   },
   "files": [
     "lib",
