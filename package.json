@@ -1,0 +1,36 @@
+{
+  "name": "claimtoken-js",
+  "version": "0.0.1-pre",
+  "description": "Claim Based Authentication Encryption via OpenSSL",
+  "main": "./lib/claim-token.js",
+  "scripts": {
+    "test": "mocha tests --recursive --watch --debug"
+  },
+  "files": [
+    "lib",
+    "pkg",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "urlsafe-base64": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "sinon": "^1.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NuffieProductions/claimtoken-js"
+  },
+  "keywords": [
+    "claim",
+    "token",
+    "authentication"
+  ],
+  "author": "Dave Robertson <david.robertson@crichq.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/NuffieProductions/claimtoken-js/issues"
+  }
+}
