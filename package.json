@@ -1,6 +1,6 @@
 {
-  "name": "claimtoken-js",
-  "version": "0.0.1-pre",
+  "name": "claimtoken",
+  "version": "0.0.1",
   "description": "Claim Based Authentication Encryption via OpenSSL",
   "main": "./lib/claim-token.js",
   "scripts": {
