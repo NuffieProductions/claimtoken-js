@@ -16,19 +16,19 @@ Add this line to your application's Gemfile:
 
 ## Usage
 ```js
-  claimtoken = require('claimtoken');
+  ClaimToken = require('claimtoken');
   crypto = require('crypto');
 
-  ct = new ClaimToken();
+  CT = new ClaimToken();
 
   // dont commit your keys into source control!
-  subject.configure(function(config) {
+  CT.configure(function(config) {
     config.sharedEncryptionKey = crypto.randomBytes(32); // must be 32 bytes/char in length, change this to your own private key
     config.digestSecret = crypto.randomBytes(81); // change this to your own secret digest
     config.cypherType = "aes-256-cbc"; // optional and default
   });
 
-  encrypted = ct.encrypt({foo: "bar"});
+  encrypted = CT.encrypt({foo: "bar"});
   <!-- // returns
     {
       type: "EncryptedMessage",
@@ -39,7 +39,7 @@ Add this line to your application's Gemfile:
     }
    -->
 
-  ct.decrypt(encryptedData);
+  CT.decrypt(encrypted);
   <!-- // returns
     Object#{foo: "bar"}
    -->
